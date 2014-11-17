@@ -1,0 +1,24 @@
+---
+title: Blog archive
+---
+
+<h1>
+	Blog archive
+	<% link_to "/blog/feed.xml" do %>
+		<%= image_tag "feed.png", alt: "RSS Feed" %>
+	<% end %>
+</h1>
+
+<div class="article-summary">
+<% blog.articles.each do |article| %>
+
+  	<h3>
+  		<a href="<%= article.url %>"><%= article.title %></a>
+	</h3>
+    <time datetime="<%= article.date.strftime('%F') %>">
+    	<%= article.date.strftime('%e %b %Y') %>
+    </time>
+	<%= article.summary %>
+
+<% end %>
+</div>

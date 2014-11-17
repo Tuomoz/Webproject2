@@ -1,0 +1,17 @@
+<% content_for(:title, "Category: #{uncapitalize tagname}") %>
+
+<h1>Articles about <%= uncapitalize tagname %></h1>
+
+<div class="article-summary">
+<% page_articles.each do |article| %>
+
+    <h3>
+      <a href="<%= article.url %>"><%= article.title %></a>
+  </h3>
+    <time datetime="<%= article.date.strftime('%F') %>">
+      <%= article.date.strftime('%e %b %Y') %>
+    </time>
+  <%= article.summary %>
+
+<% end %>
+</div>

@@ -1,0 +1,183 @@
+html, body {
+  
+}
+
+html {
+	font-family: 'Duru Sans', sans-serif;
+	font-size: 1em;
+	color: #404040;
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	height: 100%;
+	margin-bottom: 80px;
+}
+
+#container {
+	margin: 0px auto;
+	padding: 0px 1em;
+	max-width: 50rem;
+	padding-bottom: 80px;
+}
+
+.site-footer {
+	padding-top: 10px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    /*background-color: #F0F0F0;*/
+    text-align: center;
+    border-top-style: solid;
+	text-align: center;
+	border-color: #D8D8D8;
+	border-width: 1px;
+	font-size: 0.9em;
+	color: #666666;
+	
+}
+
+.site-footer a {
+	color: #C0C0C0;
+	font-family: 'Josefin Slab', serif;
+}
+
+#header {
+	box-shadow: inset 0 -20px 20px -20px rgba(50, 50, 50, 0.75);
+	border-top: 5px solid #4ECDC4;
+	text-align: center;
+	padding: 5em 0em 7em;
+	background-color: rgba(147, 128, 108, 0.1);
+	background-image: url('../images/congruent_pentagon_blue.png');
+	/* Background pattern from subtlepatterns.com */
+}
+
+#header > h1, #header > h2 {
+	font-family: 'Josefin Slab', serif;
+}
+
+#header-title {
+	margin: 0;
+	font-size: 4em;
+}
+
+#header-subtitle {
+	font-size: 1.6em;
+	font-weight: normal;
+	margin-bottom: 6rem;
+}
+
+nav ul, footer ul {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+
+nav li, footer li {
+	display: inline;
+	padding: 0em 1.5em;
+}
+
+a {
+	text-decoration: none;
+	color: #FF6B6B;
+	transition: color .20s;
+	-moz-transition: color .20s;
+	-webkit-transition: color .20s;
+	-o-transition: color .20s;
+}
+
+a:hover { 
+	text-decoration: underline;
+	color: #C44D58;
+}
+
+.article-section {
+	line-height: 1.6em;
+	padding-top: 4em;
+}
+
+article > h1 {
+	margin-bottom: 2em;
+}
+
+.topnav {
+	padding: 1em 0;
+	/*background-color: #F8F8F8;*/
+	border-bottom-style: solid;
+	text-align: center;
+	border-color: #D8D8D8;
+	border-width: 1px;
+	
+}
+
+.article-summary {
+	margin-bottom: 3em;
+}
+
+.article-summary p {
+    line-height: 1.5;
+    margin-left: 40px;
+    font-size: 0.8em;
+}
+
+.article-summary h3 {
+    display: inline;
+    margin-right: 20px;
+}
+
+.article-summary time {
+	float: right;
+	font-size: 0.8em;
+	color: #C4C4C4;
+}
+
+.article-body {
+    margin: 7em 0;
+}
+
+.next-article {
+    float: right;
+}
+
+.article-title {
+    
+    font-size: 4em;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1.5em;
+    color: #4ECDC4;
+    margin-bottom: 0px;
+    
+    text-shadow: 1px 2px 0px #999;
+
+}
+
+.article-date {
+    font-size: 1.1em;
+    text-align: center;
+    color: #556270;
+}
+
+.article-subtitle {
+    text-align: center;
+    font-style: italic;
+    color: grey;
+}
+
+.tag-list a {
+    margin-right: 20px;
+}
+
+.profile-img {
+	float: right;
+	width: 25%;
+	margin-left: 20px;
+}
+
+.fa {
+	margin-right: 0.5em;
+}

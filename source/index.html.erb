@@ -1,0 +1,42 @@
+<header id="header">
+	<h1 id="header-title">Tuomo Kärkkäinen</h1>
+	<h2 id="header-subtitle">Computer science student, test developer, climber</h2>
+	<nav>
+		<ul>
+			<li>
+				<a href="">Home</a>
+			</li>
+			<li>
+				<a href="blog">Blog</a>
+			</li>
+			<li>
+				<a href="projects">Projects</a>
+			</li>
+			<li>
+				<a href="about">About</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+<article id="container">
+	<p id="log"></p>
+	<section class="article-section">
+		<h2>Hi</h2>
+		<p>
+			Welcome to my website! I'm Tuomo and I'm a fourth year computer science student and work as a test developer on the side. I use this site as my personal portfolio, blog and playground for various experiments. Have a look around!
+		</p>
+	</section>
+	<section class="article-section">
+		<h2>Latest blog post</h2>
+		<div class="article-summary">
+		  	<h3>
+		  		<%= link_to blog.articles[0].title, blog.articles[0].url %>
+			</h3>
+		    <time datetime="<%= blog.articles[0].date.strftime('%F') %>">
+		    	<%= blog.articles[0].date.strftime('%e %b %Y') %>
+		    </time>
+			<%= blog.articles[0].summary %>
+		</div>
+	</section>
+</article>

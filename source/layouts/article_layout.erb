@@ -1,0 +1,34 @@
+<% wrap_layout :layout do %>
+	<%= partial "navbar" %>
+	<article id="container">
+	    <h1 class="article-title">
+	    	<%= data.page.title %>
+	    </h1>
+
+	    <p class="article-date">
+	    ~ <time datetime="<%= current_article.date.strftime("%FT%H:%M%:z") %>"><%= current_article.date.strftime('%e %b %Y') %></time> ~
+	    </p>
+
+	    <div class="article-body">
+	    	<%= yield %>
+	    </div>
+
+	    <p>
+	    	Categories:
+	    	<% current_article.tags.each do |tag| 
+	    		unless tag == current_article.tags.last %>
+	    			<%= link_to tag, tag_path(tag) %>, 
+	    		<% else %>
+	    			<%= link_to tag, tag_path(tag) %>
+	    		<% end %>
+	    	<% end %>
+	    </p>
+
+	    <% if current_article.previous_article %>
+	    	<%= link_to  "← #{current_article.previous_article.title}", current_article.previous_article.url %>
+	    <% end %>
+	    <% if current_article.next_article %>
+	    	<%= link_to  "#{current_article.next_article.title} →", current_article.next_article.url, class: "next-article" %>
+	    <% end %>
+	</article>
+<% end %>
