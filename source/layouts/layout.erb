@@ -8,11 +8,7 @@
         <meta name="description" content="Personal web site of Tuomo Kärkkäinen" />
 
         <title>
-            <% if current_page.data.title %>
-                <%= "#{current_page.data.title} - Tuomo's website" %>
-            <% else %>
-                Tuomo's website
-            <% end %>
+            <%= current_page.data.title || "Tuomo's website" %>
         </title>
 
         <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Josefin+Slab", "http://fonts.googleapis.com/css?family=Duru+Sans", "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" %>
