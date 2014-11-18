@@ -41,4 +41,4 @@ Of course, updating a site built with a static site generator is a bit harder th
 The normal process would require you to clone your repo, make the edit, build the site and send it to the server. That's a few more steps than you would like especially when working on a computer which isn't yours. 
 I decided to make things a bit easier with the help of GitHub webhooks and a simple php-script. Now if I want to add a new blog post from anywhere in the world I can just write it directly in GitHub which makes a post-request on my server to inform of the change. The server in turn pulls the changes, builds the site and copies the updated files to the site folder. It's not exactly the same thing as with WordPress but close enough for me. 
  
-Well, that's about it! If you want you can check code at [asd](asd)
+Well, that's about it! If you want you can check code at [GitHub](https://github.com/Tuomoz/Webproject2).
