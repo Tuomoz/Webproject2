@@ -23,11 +23,11 @@ body {
 }
 
 .site-footer {
-	padding-top: 10px;
+	padding-top: 2em;
     bottom: 0;
     left: 0;
     position: absolute;
-    height: 80px;
+    height: 3em;
     width: 100%;
     /*background-color: #F0F0F0;*/
     text-align: center;
@@ -42,7 +42,6 @@ body {
 
 .site-footer a {
 	color: #C0C0C0;
-	font-family: 'Josefin Slab', serif;
 }
 
 #header {
@@ -51,8 +50,8 @@ body {
 	text-align: center;
 	padding: 5em 0em 7em;
 	background-color: rgba(147, 128, 108, 0.1);
-	background-image: url('../images/congruent_pentagon_blue.png');
-	/* Background pattern from subtlepatterns.com */
+	background-image: url('../images/asanoha-400px.png'); /* Background pattern from subtlepatterns.com */
+    background-attachment: fixed;
 }
 
 #header > h1, #header > h2 {
@@ -68,6 +67,10 @@ body {
 	font-size: 1.6em;
 	font-weight: normal;
 	margin-bottom: 6rem;
+}
+
+#header nav ul {
+    font-size: 1.1em;
 }
 
 nav ul, footer ul {
