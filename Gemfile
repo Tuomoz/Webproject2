@@ -2,15 +2,15 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
-gem "middleman", "~>3.3.7"
-gem "middleman-blog", "~> 3.5.3"
-gem "middleman-livereload", "~> 3.1.0"
+gem "middleman", "~>4.1.9"
+gem "middleman-blog", "~> 4.0.1"
+gem "middleman-livereload", "~> 3.4.6"
 
 gem 'nokogiri'
 gem 'builder', '~> 3.2.2'
 
 # For faster file watcher updates on Windows:
-gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
+gem "wdm", :platforms => [:mswin, :mingw]
 
 # Windows does not come with time zone data
 gem "tzinfo-data", platforms: [:mswin, :mingw]

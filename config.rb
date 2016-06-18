@@ -1,6 +1,6 @@
 # Middleman configuration
 
-#activate :livereload, :host => '127.0.0.1'
+activate :livereload
 
 activate :blog do |blog|
   blog.prefix = "blog"
@@ -23,10 +23,10 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
-page "/*", layout: :standard_layout
 page "/", layout: :layout # Homepage doesn't need navigation bar
 page "/blog/*-*-*-*", layout: :article_layout
 page "/blog/feed.xml", :layout => false
+page "/*", layout: :standard_layout
 
 activate :directory_indexes
 
