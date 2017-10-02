@@ -1,44 +1,49 @@
 ---
 title: Hello World!
 date: 2014-11-17 21:57 EET
-tags: Test 2, Meta
+tags: Meta
 ---
 
-Welcome to the first blog post on my website! To get things started I'll spend this post talking about the purpose of this site and the technical details behind it. 
-READMORE 
- 
-The main reason I made this site was to simply gain more web design and sysadmin experience, but having your own website has obviously many other benefits as well. 
-Many consider it a good way to stand out when applying for jobs and it provides a platform for collecting all the things you make like a portfolio. 
-Having your own web server makes it also really easy to try out different backend frameworks and deploy your projects for anyone to see. 
- 
- 
-What about the blog then? Why would I start writing a blog on this site even though no one will probably ever read it? 
-Again the main reason for me is practice. I don't particularly like writing but I understand it's a very useful skill and writing a blog is a good way to practice it. 
-I could of course just write something on my computer locally but I think publishing what you write makes you want to actually put in some effort. 
-Writing has many benefits in itself too which I want to try out. I plan for example to write about my studies to see if it helps me to remember and understand new things better. 
- 
-##The design 
- 
-I've always liked minimalism and believe that reducing visual clutter on applications and web sites helps users to understand and find the actual content more easily. 
-I naturally wanted to design this site based on that idea and I think I succeeded quite well. 
-The only unnecessary element on the site is the header background on the home page but I think it adds some nice character and contrast.  
-The design of course isn't innovative in the least but it works great for it's purpose. 
- 
-Minimalist design makes it also very easy to make your site responsive and mobile friendly. 
-For example this site scales almost perfectly for any screen size without even any media queries! Of course it would look even better with some additional styling (which I will add later) but the point is clear: minimalism helps to implement mobile-first design. 
- 
-##The tech 
- 
-Let's get to the tech-talk. It was clear to me from the beginning that if I wanted to be able to run any kind of backend software or be able to really understand how to maintain a web server I needed a vps. 
-[Digital Ocean](https://www.digitalocean.com/) is one of the more popular providers at the time and their pricing is very attractive so I decided to get the service from them. 
-I had a great time setting up Nginx and other stuff running on a Ubuntu server and learned a lot in the process. 
- 
-Having the server running nicely it was time to implement the website. Continuing with the theme of minimalism I decided to build the site with a static site generator which have been gaining popularity especially with the help of GitHub pages. 
-GitHub pages uses [Jekyll](http://jekyllrb.com/) as the generator but I decided to use [Middleman](http://middlemanapp.com/) because I had some earlier experience with it and like it's structure a bit more. 
-Static sites are really cool because they are so lightweight. That allows me to use the cheapest plan DO offers and still have some resources to run some other projects as well. 
- 
-Of course, updating a site built with a static site generator is a bit harder than just adding a new page on WordPress. 
-The normal process would require you to clone your repo, make the edit, build the site and send it to the server. That's a few more steps than you would like especially when working on a computer which isn't yours. 
-I decided to make things a bit easier with the help of GitHub webhooks and a simple php-script. Now if I want to add a new blog post from anywhere in the world I can just write it directly in GitHub which makes a post-request on my server to inform of the change. The server in turn pulls the changes, builds the site and copies the updated files to the site folder. It's not exactly the same thing as with WordPress but close enough for me. 
- 
-Well, that's about it! If you want you can check code at [GitHub](https://github.com/Tuomoz/Webproject2).
+Welcome to the first blog post on my website! To get things started I'll spend this post talking about the purpose of this site and the technical details behind it.
+READMORE
+
+The main reason I made this site was to simply gain more web design and sysadmin experience, but having your own website has obviously many other benefits as well.
+Many consider it a good way to stand out when applying for jobs and it provides a platform for collecting all the things you make like a portfolio.
+Having your own web server makes it also really easy to try out different backend frameworks and deploy your projects for anyone to see.
+
+
+What about the blog then? Why would I start writing a blog on this site even though no one will probably ever read it?
+Again the main reason for me is practice. I don't particularly like writing but I understand it's a very useful skill and writing a blog is a good way to practice it.
+I could of course just write something on my computer locally but I think publishing what you write makes you want to actually put in some effort.
+Writing has many benefits in itself too which I want to try out. I plan for example to write about my studies to see if it helps me to remember and understand new things better.
+
+**EDIT 2017: Seems like this blogging thing didn't really take of since this is still the only post on the site! I think I will eventually write some actual posts but my studies
+have themselves required so much writing lately that I haven't been very motivated from a learning point of view.**
+
+##The design
+
+I've always liked minimalism and believe that reducing visual clutter on applications and web sites helps users to understand and find the actual content more easily.
+I naturally wanted to design this site based on that idea and I think I succeeded quite well.
+The only unnecessary element on the site is the header background on the home page but I think it adds some nice character and contrast.
+The design of course isn't innovative in the least but it works great for it's purpose.
+
+Minimalist design makes it also very easy to make your site responsive and mobile friendly.
+For example this site scales almost perfectly for any screen size without even any media queries! Of course it would look even better with some additional styling (which I will add later) but the point is clear: minimalism helps to implement mobile-first design.
+
+##The tech
+
+Let's get to the tech-talk. It was clear to me from the beginning that if I wanted to be able to run any kind of backend software or be able to really understand how to maintain a web server I needed a vps.
+[Digital Ocean](https://www.digitalocean.com/) is one of the more popular providers at the time and their pricing is very attractive so I decided to get the service from them.
+I had a great time setting up Nginx and other stuff running on a Ubuntu server and learned a lot in the process.
+
+Having the server running nicely it was time to implement the website. Continuing with the theme of minimalism I decided to build the site with a static site generator which have been gaining popularity especially with the help of GitHub pages.
+GitHub pages uses [Jekyll](http://jekyllrb.com/) as the generator but I decided to use [Middleman](http://middlemanapp.com/) because I had some earlier experience with it and like it's structure a bit more.
+Static sites are really cool because they are so lightweight. That allows me to use the cheapest plan DO offers and still have some resources to run some other projects as well.
+
+Of course, updating a site built with a static site generator is a bit harder than just adding a new page on WordPress.
+The normal process would require you to clone your repo, make the edit, build the site and send it to the server. That's a few more steps than you would like especially when working on a computer which isn't yours.
+I decided to make things a bit easier with the help of GitHub webhooks and a simple PHP-script. Now if I want to add a new blog post from anywhere in the world I can just write it directly in GitHub which makes a post-request on my server to inform of the change. The server in turn pulls the changes, builds the site and copies the updated files to the site folder. It's not exactly the same thing as with WordPress but close enough for me.
+
+**EDIT: I'm now using [webhook](https://github.com/adnanh/webhook) for deployments instead of my PHP-script which is a much more reliable and sensible solution.**
+
+Well, that's about it! If you want you can check the code at [GitHub](https://github.com/Tuomoz/Webproject2).
